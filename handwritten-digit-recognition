@@ -1,0 +1,31 @@
+def recognize_digit(digit):
+    digits = {
+        "0": "ZERO",
+        "1": "ONE",
+        "2": "TWO",
+        "3": "THREE",
+        "4": "FOUR",
+        "5": "FIVE",
+        "6": "SIX",
+        "7": "SEVEN",
+        "8": "EIGHT",
+        "9": "NINE"
+    }
+    if digit in digits:
+        return digits[digit]
+    else:
+        return "Unknown digit"
+print("=== HANDWRITTEN DIGIT RECOGNITION ===")
+print("Enter a digit from 0 to 9")
+digit = input("Enter digit: ")
+result = recognize_digit(digit)
+print("Recognized Digit:", digit)
+print("Result:", result)
+
+
+OUTPUT:
+=== HANDWRITTEN DIGIT RECOGNITION ===
+Enter a digit from 0 to 9
+Enter digit: 7
+Recognized Digit: 7
+Result: SEVEN
